@@ -21,9 +21,9 @@ namespace API.Errors
         {
             return statusCode switch 
             {
-                400 => "A bad request , you have made",
-                401 => "Autorized, you are not",
-                404 => "Request found, it was not",
+                400 => "A bad request , Input Id Is Invalid",
+                401 => "Un-Autorized",
+                404 => "Request Nor found",
                 500 => "Not Found, Not exist ",
                 _  => null
             };
