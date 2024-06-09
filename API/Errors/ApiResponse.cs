@@ -23,7 +23,7 @@ namespace API.Errors
             {
                 400 => "A bad request , Input Id Is Invalid",
                 401 => "Un-Autorized",
-                404 => "Request Nor found",
+                404 => "Request Not found",
                 500 => "Not Found, Not exist ",
                 _  => null
             };
