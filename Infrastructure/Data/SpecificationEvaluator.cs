@@ -30,6 +30,11 @@ namespace Infrastructure.Data
                 query = query.OrderBy(spec.OrderByDescending);
             }
 
+            if (spec.IsPAagingEnable)
+            {
+                query = query.Skip(spec.Skip).Take(spec.Take);
+            }
+
             query = spec.Includes.Aggregate(query,(current,include) => //current : Passing Entity || include : Expression of Include || what doing here is what is include in prodcutrepository
                 current.Include(include));
 
