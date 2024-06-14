@@ -11,6 +11,7 @@ namespace Core.Specifications
         public ProductWithFiltersForCountSpecification(ProductSpecParam productParams)
         
             :base ( x =>
+                (string.IsNullOrEmpty(productParams.Search) || x.Name.ToLower().Contains(productParams.Search.ToLower())) &&
                 (!productParams.BrandId.HasValue || x.ProductBrandId == productParams.BrandId) && 
                 (!productParams.TypeId.HasValue || x.ProductTypeId == productParams.TypeId)    
                 
