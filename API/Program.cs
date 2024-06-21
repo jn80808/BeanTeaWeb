@@ -29,6 +29,11 @@ app.UseStaticFiles();
 
 app.UseCors("CorsPolicy");
 
+app.UseHttpsRedirection();
+
+app.UseRouting();
+
+
 app.UseAuthorization();
 
 app.MapControllers();
