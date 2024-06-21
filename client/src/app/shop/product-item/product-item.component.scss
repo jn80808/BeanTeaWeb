@@ -1,0 +1,33 @@
+/* product-item.component.css */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-body .btn-group {
+    margin-top: auto;
+}
+
+
+/* Set fixed size for product images and ensure they maintain their aspect ratio */
+.product-image {
+    width: 100%;
+    height: 200px; /* for height as needed */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    object-position: center; /* Center the image within the specified dimensions */
+}
+
+/* Custom styles for consistent card heights and spacing */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-body .btn-group {
+    margin-top: auto;
+}
+
+.card-footer {
+    margin-top: auto;
+    padding-top: 40px; /* Add padding to create space above the footer */
+}
