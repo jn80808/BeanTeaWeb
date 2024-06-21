@@ -8,23 +8,15 @@
                 <option >Price: Low to High</option>
                 <option >Price: High to Low</option>
             </select>
-            <!-- list-Group Brand and Types -->
+           <!-- list-Group Brand and Types -->
            <h5 class="custom-heading ms-3">Brands</h5>
-           <ul class="list-group my-3">
-            <li class="list-group-item active custom-active-item" >An active item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
-          </ul>
-          <h5 class="custom-heading ms-3">Types</h5>
-           <ul class="list-group my-3">
-            <li class="list-group-item active custom-active-item" >An active item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
-            <li class="list-group-item">A fourth item</li>
-            <li class="list-group-item">And a fifth one</li>
-          </ul>
+            <ul class="list-group my-3">
+                <li class="list-group-item" *ngFor="let brand of brands | unique:'name'">{{ brand.name }}</li>
+            </ul>
+            <h5 class="custom-heading ms-3">Types</h5>
+            <ul class="list-group my-3">
+                <li class="list-group-item" *ngFor="let type of types | unique:'name'">{{ type.name }}</li>
+            </ul>
         </section>
         <!-- Search Column  -->
         <section class="col-12 col-md-9">
