@@ -42,8 +42,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 2,
-      "ProductBrandId": 2
+      "ProductTypeId" : 1,
+      "ProductBrandId": 1
     },
     {
       "Name": "Chamomile Tea",
@@ -65,8 +65,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 3,
-      "ProductBrandId": 3
+      "ProductTypeId" : 1,
+      "ProductBrandId": 1
     },
     {
       "Name": "Earl Grey Tea",
@@ -88,8 +88,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 4,
-      "ProductBrandId": 4
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Ginseng Tea",
@@ -111,8 +111,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 5,
-      "ProductBrandId": 5
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Green Tea",
@@ -134,8 +134,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 6,
-      "ProductBrandId": 6
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Hibiscus Tea",
@@ -157,8 +157,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 7,
-      "ProductBrandId": 7
+      "ProductTypeId" : 1,
+      "ProductBrandId": 3
     },
     {
       "Name": "Jasmine Tea",
@@ -180,8 +180,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 8,
-      "ProductBrandId": 8
+      "ProductTypeId" : 1,
+      "ProductBrandId": 3
     },
     {
       "Name": "Lavender Tea",
@@ -203,8 +203,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 9,
-      "ProductBrandId": 9
+      "ProductTypeId" : 1,
+      "ProductBrandId": 3
     },
     {
       "Name": "Lemon Ginger Tea",
@@ -226,8 +226,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 10,
-      "ProductBrandId": 10
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Matcha Tea",
@@ -249,8 +249,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 11,
-      "ProductBrandId": 11
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Oolong Tea",
@@ -272,8 +272,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 12,
-      "ProductBrandId": 12
+      "ProductTypeId" : 1,
+      "ProductBrandId": 1
     },
     {
       "Name": "Peppermint Tea",
@@ -295,8 +295,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 13,
-      "ProductBrandId": 13
+      "ProductTypeId" : 1,
+      "ProductBrandId": 1
     },
     {
       "Name": "Pu-erh Tea",
@@ -318,8 +318,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 14,
-      "ProductBrandId": 14
+      "ProductTypeId" : 1,
+      "ProductBrandId": 3
     },
     {
       "Name": "Raspberry Leaf Tea",
@@ -341,8 +341,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 15,
-      "ProductBrandId": 15
+      "ProductTypeId" : 1,
+      "ProductBrandId": 3
     },
     {
       "Name": "Rooibos Tea",
@@ -364,8 +364,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 16,
-      "ProductBrandId": 16
+      "ProductTypeId" : 1,
+      "ProductBrandId": 3
     },
     {
       "Name": "Sencha Tea",
@@ -387,8 +387,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 17,
-      "ProductBrandId": 17
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Turmeric Tea",
@@ -410,8 +410,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 18,
-      "ProductBrandId": 18
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "White Tea",
@@ -433,8 +433,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 19,
-      "ProductBrandId": 19
+      "ProductTypeId" : 1,
+      "ProductBrandId": 2
     },
     {
       "Name": "Yerba Mate Tea",
@@ -456,8 +456,8 @@
       "RoastLevel": null,
       "GrindType": null,
       "BrewingMethod": null,
-      "ProductTypeId" : 20,
-      "ProductBrandId": 20
+      "ProductTypeId" : 1,
+      "ProductBrandId": 1
     },
     {
       "Name": "Brazilian Coffee",
@@ -480,11 +480,11 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Espresso",
-      "ProductTypeId": 21,
-      "ProductBrandId": 21
+      "ProductTypeId": 2,
+      "ProductBrandId": 4
     },
     {
-      "Name": "Brazilian Coffee",
+      "Name": "Texas Coffee",
       "Description": "A smooth and nutty coffee with a low acidity, sourced from the coffee plantations of Brazil.",
       "Price": 8.49,
       "Quantity_In_Stock": 85,
@@ -492,7 +492,7 @@
       "Type": "Arabica",
       "Flavor": "Nutty",
       "CaffeineContent": "Low",
-      "ImageUrl": "images/products/brazilian_coffee_image.png",
+      "ImageUrl": "images/products/Texas_coffee_image.png",
       "ManufacturingDate": "2023-01-20",
       "ExpirationDate": "2023-09-30",
       "SteepingTime": null,
@@ -503,8 +503,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Espresso",
-      "ProductTypeId": 21,
-      "ProductBrandId": 21
+      "ProductTypeId": 2,
+      "ProductBrandId": 4
     },
     {
       "Name": "Colombian Coffee",
@@ -526,8 +526,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 22,
-      "ProductBrandId": 22
+      "ProductTypeId": 2,
+      "ProductBrandId": 4
     },
     {
       "Name": "Colombian Supremo Coffee",
@@ -549,8 +549,8 @@
       "RoastLevel": "Medium-Dark",
       "GrindType": "Medium",
       "BrewingMethod": "Pour-over",
-      "ProductTypeId": 23,
-      "ProductBrandId": 23
+      "ProductTypeId": 2,
+      "ProductBrandId": 4
     },
     {
       "Name": "Costa Rican Coffee",
@@ -572,8 +572,8 @@
       "RoastLevel": "Light",
       "GrindType": "Medium",
       "BrewingMethod": "Pour-over",
-      "ProductTypeId": 24,
-      "ProductBrandId": 24
+      "ProductTypeId": 2,
+      "ProductBrandId": 5
     },
     {
       "Name": "Cuban Coffee",
@@ -595,8 +595,8 @@
       "RoastLevel": "Dark",
       "GrindType": "Coarse",
       "BrewingMethod": "Espresso",
-      "ProductTypeId": 25,
-      "ProductBrandId": 25
+      "ProductTypeId": 2,
+      "ProductBrandId": 5
     },
     {
       "Name": "Ecuadorian Coffee",
@@ -618,8 +618,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Pour-over",
-      "ProductTypeId": 26,
-      "ProductBrandId": 26
+      "ProductTypeId": 2,
+      "ProductBrandId": 5
     },
     {
       "Name": "Ethiopian Coffee",
@@ -641,8 +641,8 @@
       "RoastLevel": "Medium-Dark",
       "GrindType": "Fine",
       "BrewingMethod": "Pour-over",
-      "ProductTypeId": 27,
-      "ProductBrandId": 27
+      "ProductTypeId": 2,
+      "ProductBrandId": 6
     },
     {
       "Name": "Guatemalan Coffee",
@@ -664,8 +664,8 @@
       "RoastLevel": "Medium-Dark",
       "GrindType": "Coarse",
       "BrewingMethod": "French Press",
-      "ProductTypeId": 28,
-      "ProductBrandId": 28
+      "ProductTypeId": 2,
+      "ProductBrandId": 6
     },
     {
       "Name": "Hawaiian Kona Coffee",
@@ -687,8 +687,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Espresso",
-      "ProductTypeId": 29,
-      "ProductBrandId": 29
+      "ProductTypeId": 2,
+      "ProductBrandId": 6
     },
     {
       "Name": "Honduran Coffee",
@@ -710,8 +710,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 30,
-      "ProductBrandId": 30
+      "ProductTypeId": 2,
+      "ProductBrandId": 6
     },
     {
       "Name": "Indian Monsooned Malabar Coffee",
@@ -733,8 +733,8 @@
       "RoastLevel": "Medium-Dark",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 31,
-      "ProductBrandId": 31
+      "ProductTypeId": 2,
+      "ProductBrandId": 6
     },
     {
       "Name": "Jamaican Blue Mountain Coffee",
@@ -756,8 +756,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 32,
-      "ProductBrandId": 32
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Kenyan Coffee",
@@ -779,8 +779,8 @@
       "RoastLevel": "Light-Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 33,
-      "ProductBrandId": 33
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Mexican Chiapas Coffee",
@@ -802,8 +802,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "French Press",
-      "ProductTypeId": 34,
-      "ProductBrandId": 34
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Nicaraguan Coffee",
@@ -825,8 +825,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 35,
-      "ProductBrandId": 35
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Panamanian Coffee",
@@ -848,8 +848,8 @@
       "RoastLevel": "Light-Medium",
       "GrindType": "Medium",
       "BrewingMethod": "Drip",
-      "ProductTypeId": 36,
-      "ProductBrandId": 36
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Peruvian Coffee",
@@ -871,8 +871,8 @@
       "RoastLevel": "Medium",
       "GrindType": "Medium",
       "BrewingMethod": "French Press",
-      "ProductTypeId": 37,
-      "ProductBrandId": 37
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Sumatra Coffee",
@@ -894,8 +894,8 @@
       "RoastLevel": "Dark",
       "GrindType": "Coarse",
       "BrewingMethod": "French Press",
-      "ProductTypeId": 38,
-      "ProductBrandId": 38
+      "ProductTypeId": 2,
+      "ProductBrandId": 7
     },
     {
       "Name": "Tanzanian Peaberry Coffee",
@@ -917,8 +917,8 @@
       "RoastLevel": "Medium-Light",
       "GrindType": "Medium",
       "BrewingMethod": "Pour-over",
-      "ProductTypeId": 39,
-      "ProductBrandId": 39
+      "ProductTypeId": 2,
+      "ProductBrandId": 4
     },
     {
       "Name": "Thai Coffee",
@@ -940,8 +940,8 @@
       "RoastLevel": "Medium-Dark",
       "GrindType": "Coarse",
       "BrewingMethod": "French Press",
-      "ProductTypeId": 40,
-      "ProductBrandId": 40
+      "ProductTypeId": 2,
+      "ProductBrandId": 4
     },
     {
       "Name": "VietNamese Coffee",
@@ -963,8 +963,8 @@
       "RoastLevel": "Dark",
       "GrindType": "Coarse",
       "BrewingMethod": "VietNamese Drip",
-      "ProductTypeId": 41,
-      "ProductBrandId": 41
+      "ProductTypeId": 2,
+      "ProductBrandId": 5
     },
     {
       "Name": "Yemeni Coffee",
@@ -986,7 +986,7 @@
       "RoastLevel": "Dark",
       "GrindType": "Coarse",
       "BrewingMethod": "Turkish Coffee",
-      "ProductTypeId": 42,
-      "ProductBrandId": 42
+      "ProductTypeId": 2,
+      "ProductBrandId": 5
     }
   ]

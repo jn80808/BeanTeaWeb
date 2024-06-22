@@ -66,7 +66,7 @@ namespace Infrastructure.Data.Migrations
                     b.Property<string>("Origin")
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("Price")
+                    b.Property<double>("Price")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("ProductBrandId")
