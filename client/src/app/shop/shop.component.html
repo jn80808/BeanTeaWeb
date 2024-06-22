@@ -13,7 +13,7 @@
             <ul class="list-group my-3">
                 <li class="list-group-item" 
                     *ngFor="let brand of brands " 
-                    [class.active]="brand.id === brandIdSelected"
+                    [class.active]="brand.id === shopParams.brandId"
                     [value] = "brand.id"
                     (click) = "onBrandSelected(brand.id)"
                     >{{ brand.name }}
@@ -23,7 +23,7 @@
             <ul class="list-group my-3">
                 <li class="list-group-item" 
                     *ngFor="let type of types "
-                    [class.active]="type.id === typeIdSelected"
+                    [class.active]="type.id === shopParams.typeId"
                     [value] = "type.id"
                     (click) = "onTypeSelected(type.id)"
                     >{{ type.name }}
@@ -55,7 +55,9 @@
             <div class="d-flex justify-content-center">
                 <pagination     
                     [boundaryLinks]="true" 
-                    [totalItems]="77"
+                    [totalItems]="totalCount"
+                    [itemsPerPage]="shopParams.pageSize"
+                    [maxSize]="15"
                     previousText="&lsaquo;" 
                     nextText="&rsaquo;" 
                     firstText="&laquo;" 
@@ -63,8 +65,6 @@
                 </pagination>
 
             </div>
-
-
         </section>
     </div>
 </div>
