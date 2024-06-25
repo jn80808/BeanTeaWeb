@@ -4,6 +4,7 @@ import { ShopComponent } from './shop.component';
 import { ProductItemComponent } from './product-item/product-item.component';
 import { UniquePipe } from './unique.pipe';
 import { SharedModule } from '../shared/shared.module';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 
@@ -12,7 +13,8 @@ import { SharedModule } from '../shared/shared.module';
   declarations: [
     ShopComponent,
     ProductItemComponent,
-    UniquePipe
+    UniquePipe,
+    ProductDetailsComponent
   ],
   imports: [
     CommonModule,
