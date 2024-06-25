@@ -11,9 +11,19 @@
     right: 30px; /* postion of 5 in the cart*/
 }
 
+a{
+    text-decoration: none;
+    color : #8E3200;
 
+    &.active{
+        color: #FEB941
+    }
 
+}
 
+.logo {
+    cursor: pointer;
+}
 
 
 
