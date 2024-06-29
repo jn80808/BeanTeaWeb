@@ -13,11 +13,11 @@
 
 a{
     text-decoration: none;
-    color : #8E3200;
+    color : #6B240C;
     font-weight: bold;
 
     &.active{
-        color: #54B435
+        color: #4abfa6
     }
 
 }
@@ -26,6 +26,11 @@ a{
     cursor: pointer;
 }
 
+.btn-outline-secondary:hover {
+    background-color: #4abfa6;
+    border-color: #64a7c7;
+    color: white;
+}
 
 
 

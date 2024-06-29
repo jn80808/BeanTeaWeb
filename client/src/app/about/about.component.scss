@@ -1,0 +1,265 @@
+// Import Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+// Import Bootstrap CSS
+@import "https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+
+// Import custom CSS for your component or layout
+@import "https://unpkg.com/bs-brain@2.0.4/components/abouts/about-2/assets/css/about-2.css";
+
+// Import Font Awesome CSS
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css");
+
+.custom-check-circle {
+  color: #4abfa6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-circle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #baf3e6, #4abfa6);
+  bottom: 50%;
+  right: 50%;
+  transform: translate(-40%, 38%);
+}
+
+.square {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: #DEAC80;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(45%, -45%);
+  border-radius: 20px;
+}
+
+.form {
+  position: relative;
+  width: 1000px;
+  height: 600px;
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.contact-info {
+  width: 350px;
+  color: #61677A;
+}
+
+.contact-info .title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #6B240C;
+}
+
+.contact-info .text {
+  font-size: 1rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.contact-info .info {
+  position: relative;
+}
+
+.contact-info .information {
+  display: flex;
+  align-items: center;
+  margin: 0.7rem 0;
+  font-size: 0.95rem;
+}
+
+.contact-info .information i {
+  width: 28px;
+  height: 28px;
+  background-color: #6B240C;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.contact-info .social-media {
+  padding: 2rem 0 0 0;
+}
+
+.contact-info .social-media p {
+  font-size: 1rem;
+}
+
+.contact-info .social-icons {
+  display: flex;
+  margin-top: 0.5rem;
+}
+
+.contact-info .social-icons a {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: #6B240C;
+  color: #fff;
+  text-align: center;
+  line-height: 28px;
+  margin-right: 0.5rem;
+  transition: 0.3s;
+}
+
+.contact-info .social-icons a:hover {
+  transform: scale(1.00);
+}
+
+.contact-form {
+  width: 500px;
+  position: relative;
+}
+
+.contact-form .title {
+  font-size: 2rem;
+  color: #6B240C;
+  font-weight: 500;
+}
+
+.contact-form .input-container {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.contact-form .input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #64a7c7;
+  background: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contact-form .input:focus {
+  border-color: #4abfa6;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-form .input-container label {
+  position: absolute;
+  top: 50%;
+  left: 1.2rem;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #64a7c7;
+  font-size: 1rem;
+  pointer-events: none;
+  transition: 0.5s;
+  background-color: #fff;
+}
+
+.contact-form .input-container textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+.contact-form .input-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.6rem 1.2rem;
+  display: block;
+  transition: 0.3s;
+  color: #666;
+  font-size: 0.95rem;
+  pointer-events: none;
+}
+
+.contact-form .input-container input:focus + label,
+.contact-form .input-container input:valid + label,
+.contact-form .input-container textarea:focus + label,
+.contact-form .input-container textarea:valid + label {
+  top: 0%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #4abfa6;
+}
+
+.contact-form .input-container input:focus ~ span,
+.contact-form .input-container input:valid ~ span,
+.contact-form .input-container textarea:focus ~ span,
+.contact-form .input-container textarea:valid ~ span {
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.contact-form .btn {
+  padding: 0.6rem 1.3rem;
+  background-color: #6B240C;
+  border: 2px solid #4abfa6;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+.contact-form .btn:hover {
+  background-color: #54B435;
+}
+
+.contact-form .circle {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #baf3e6, #4abfa6);
+}
+
+.contact-form .circle.one {
+  width: 70px;
+  height: 70px;
+  top: -15px;
+  right: 50px;
+}
+
+.contact-form .circle.two {
+  width: 150px;
+  height: 150px;
+  bottom: 50px;
+  left: -20px;
+}
