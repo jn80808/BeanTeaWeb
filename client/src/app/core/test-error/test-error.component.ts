@@ -21,6 +21,7 @@ export class TestErrorComponent {
     })
   }
 
+   
   get500Error(){
     this.http.get(this.baseUrl + 'buggy/servererror').subscribe({
       next: response => console.log(response),
