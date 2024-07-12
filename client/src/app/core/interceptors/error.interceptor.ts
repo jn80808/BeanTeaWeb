@@ -27,15 +27,14 @@ export class ErrorInterceptor implements HttpInterceptor {
               this.toastr.error(error.error.message, error.status.toString());
             }
           }
-          
           if (error.status === 401) {
-            this.toastr.error(error.error.message,error.status.toString() )
+            this.toastr.error(error.error.message, error.status.toString());
           }
           if (error.status === 404) {
             this.router.navigateByUrl('/not-found');
           }
           if (error.status === 500) {
-            const navigationExtras: NavigationExtras = {state: {error:error.error} }
+            const navigationExtras: NavigationExtras = {state: {error:error.error} } // errormessage.stacktrace.statuscode
             this.router.navigateByUrl('/server-error',navigationExtras);
           }
         }
