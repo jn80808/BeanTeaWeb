@@ -1,18 +1,7 @@
-/* product-item.component.css */
-.card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.card-body .btn-group {
-    margin-top: auto;
-}
-
-
 /* Set fixed size for product images and ensure they maintain their aspect ratio */
 .product-image {
     width: 100%;
-    height: 200px; /* for height as needed */
+    height: 200px; /* Adjust the height as needed */
     object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
     object-position: center; /* Center the image within the specified dimensions */
 }
@@ -23,6 +12,7 @@
     flex-direction: column;
     justify-content: space-between;
 }
+
 .card-body .btn-group {
     margin-top: auto;
 }
@@ -36,9 +26,58 @@
     color: #8E3200;
 }
 
-.btn-outline-secondary:hover {
-    background-color: #64a7c7;
-    border-color: #64a7c7;
-    color: white;
+.btn {
+    width: 30%;
+    height: 40px;
+    background-color: #4abfa6; /* Default background color */
+    color: white; /* Ensure text is readable */
+    border: none; /* Remove border if any */
+    z-index: 1000;
+    transition: all 0.5s;
 }
 
+.btn:hover {
+    background-color: #994D1C; /* Background color on hover */
+}
+
+.image {
+    position: relative;
+}
+
+.image:hover .product-image {
+    opacity: 0.3;
+}
+
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay button:first-of-type {
+    transform: translateX(-20px);
+}
+
+.hover-overlay button:last-of-type {
+    transform: translateX(20px);
+}
+
+.image:hover .hover-overlay button:first-of-type {
+    transform: translateX(0);
+}
+
+.image:hover .hover-overlay button:last-of-type {
+    transform: translateX(0);
+}
