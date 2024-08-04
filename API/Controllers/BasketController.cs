@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core.Entities;
+using Core.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
@@ -22,13 +24,12 @@ namespace API.Controllers
             return Ok(basket ?? new CustomerBasket(id));
         }
 
-        [HtppPost]
+        [HttpPost]
 
         public async Task<ActionResult<CustomerBasket>> UpdateBasket(CustomerBasket basket)
         {
-            var UpdateBasket = await _basketRepository.UpdateBasketAsync(basket);
-
-            return Ok(UpdateBasket);
+            var UpdatedBasket = await _basketRepository.UpdateBasketAsyn(basket);
+            return Ok(UpdatedBasket);
 
         }
 

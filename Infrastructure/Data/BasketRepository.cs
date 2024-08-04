@@ -40,6 +40,11 @@ namespace Infrastructure.Data
 
             return await GetBasketAsync(basket.Id);
         }
+
+        public Task UpdateBasketAsync(CustomerBasket basket)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 
