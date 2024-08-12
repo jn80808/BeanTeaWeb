@@ -1,13 +1,137 @@
-<carousel [isAnimated]="true">
-    <slide>
-        <img src="assets/images/Coffee-Tea.jpeg" alt="slide" class="carousel-img">
-    </slide>
-    <slide>
-        <img src="assets/images/TeaFarm.jpeg" alt="slide" class="carousel-img">
-    </slide>
-    <slide>
-        <img src="assets/images/CoffeeFarm.jpeg" alt="slide" class="carousel-img">
-    </slide>
+<carousel [isAnimated]="true" aria-label="Image carousel of coffee and tea">
+  <slide>
+    <img src="assets/images/Coffee-Tea.jpeg" alt="Coffee and Tea" class="carousel-img">
+  </slide>
+  <slide>
+    <img src="assets/images/TeaFarm.jpeg" alt="A picturesque tea farm" class="carousel-img">
+  </slide>
+  <slide>
+    <img src="assets/images/CoffeeFarm.jpeg" alt="A serene coffee farm" class="carousel-img">
+  </slide>
 </carousel>
 
-<h1>Welcome</h1>
+<h1 class="text-center mt-5">Welcome to BanTeas</h1>
+
+<!-- Freshness Tea Section -->
+<section class="container-fluid mt-3">
+  <div class="row align-items-center">
+    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center block">
+      <h3>Sip the Aroma of <span class="highlight">Freshness Teas</span></h3>
+      <p><strong>Tea</strong> is more than a beverage; it's a ritual, a moment of peace. Discover the calming essence of our carefully curated teas, sourced from the finest gardens.</p>
+      <button class="bubbly-button mt-3" onclick="window.location.href='http://localhost:4200/shop';">Explore Now</button>
+    </div>
+    <div class="col-md-6">
+      <img src="assets/images/Teas.jpg" alt="Various types of fresh tea" class="mx-auto d-block float-start img-block">
+    </div>
+  </div>
+</section>
+
+<!-- Popular Products Section -->
+<section class="container-fluid mt-5">
+  <h3 class="text-center mb-4">Our Popular Products <span class="highlight">Teas</span></h3>
+  <div class="row text-center">
+    <div class="col-4">
+      <img src="assets/images/Green Teas.jpg" alt="Green Tea" class="mx-auto d-block">
+      <p class="mt-2">Green Tea</p>
+    </div>
+    <div class="col-4">
+      <img src="assets/images/Ololong Teas.jpg" alt="Herbal Infusion" class="mx-auto d-block">
+      <p class="mt-2">Herbal Infusion</p>
+    </div>
+    <div class="col-4">
+      <img src="assets/images/Camellia.jpg" alt="Chai Latte" class="mx-auto d-block">
+      <p class="mt-2">Chai Latte</p>
+    </div>
+  </div>
+</section>
+
+<!-- Icons Section -->
+<div class="container-fluid mt-5">
+  <h3 class="text-center mb-4">Our Key Features</h3>
+  <div class="row text-center">
+    <div class="col-3">
+      <img src="assets/images/cup.jpg" alt="Enjoy the day" class="icon-img">
+      <p class="mt-2 icon-title">Enjoy the Day</p>
+      <p class="icon-description">Tea is an aromatic beverage prepared by pouring.</p>
+    </div>
+    <div class="col-3">
+      <img src="assets/images/Leaf.jpg" alt="Fresh tea leaves" class="icon-img">
+      <p class="mt-2 icon-title">Fresh Tea Leaves</p>
+      <p class="icon-description">Tea is an aromatic beverage prepared by pouring.</p>
+    </div>
+    <div class="col-3">
+      <img src="assets/images/TeaBag.jpg" alt="Healthy tea bag" class="icon-img">
+      <p class="mt-2 icon-title">Healthy Tea Bag</p>
+      <p class="icon-description">Tea is an aromatic beverage prepared by pouring.</p>
+    </div>
+    <div class="col-3">
+      <img src="assets/images/Sugar.jpg" alt="No much sugar" class="icon-img">
+      <p class="mt-2 icon-title">No Much Sugar</p>
+      <p class="icon-description">Tea is an aromatic beverage prepared by pouring.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Freshness Coffee Section -->
+<section class="container-fluid mt-3 freshness-coffee-section">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <img src="assets/images/cf66.JPG" alt="Cup of coffee" class="mx-auto d-block float-end img-block coffee-img">
+    </div>
+    <div class="col-md-6 d-flex flex-column align-items-center justify-content-center text-center block">
+      <h3><span class="black-text">Sip the Aroma of </span> <span class="highlight">Freshness <span class="highlight2">Coffee</span></span></h3>
+      <p><strong>Coffee</strong> is more than just a drink; it's an experience, a spark of energy. Savor the rich aroma and bold flavors of our expertly crafted coffees, sourced from the world's best beans.</p>
+      <button class="bubbly-button mt-3" onclick="window.location.href='http://localhost:4200/shop';">Explore Now</button>
+    </div>
+  </div>
+</section>
+
+<!-- Coffee Grind Section -->
+<section class="container-fluid mt-5 coffee-grind-section">
+  <h3 class="text-center mb-4"><span class="highlight2">Coffee</span><span class="grind-section-text"> Grind Section</span></h3>
+  <p class="text-center mb-4">Explore our range of coffee grinds, perfect for every brewing method. From whole beans to coarse grinds, find the perfect match for your taste.</p>
+  <div class="row text-center">
+    <div class="col-2 grind-item">
+      <img src="assets/images/WholeBreanGrinder_B.jpg" alt="Whole Bean Grind" class="grind-img">
+      <img src="assets/images/WholeBreanGrinder_T.jpg" alt="Whole Bean Grind" class="grind-img2">
+      <p class="mt-2 grind-title">Whole Bean Grind</p>
+    </div>
+    <div class="col-2 grind-item">
+      <img src="assets/images/ExtraFine_B.jpg" alt="Extra Fine" class="grind-img">
+      <img src="assets/images/ExtraFine_T.JPG" alt="Extra Fine" class="grind-img2">
+      <p class="mt-2 grind-title">Extra Fine</p>
+    </div>
+    <div class="col-2 grind-item">
+      <img src="assets/images/Fine_B.jpg" alt="Fine" class="grind-img">
+      <img src="assets/images/Fine_T.JPG" alt="Fine" class="grind-img2">
+      <p class="mt-2 grind-title">Fine</p>
+    </div>
+    <div class="col-2 grind-item">
+      <img src="assets/images/Medium Fine_B.JPG" alt="Medium Fine" class="grind-img">
+      <img src="assets/images/Medium Fine_T.jpg" alt="Medium Fine" class="grind-img2">
+      <p class="mt-2 grind-title">Medium Fine</p>
+    </div>
+    <div class="col-2 grind-item">
+      <img src="assets/images/Medium_B.jpg" alt="Medium" class="grind-img">
+      <img src="assets/images/Medium_T.JPG" alt="Medium" class="grind-img2">
+      <p class="mt-2 grind-title">Medium</p>
+    </div>
+    <div class="col-2 grind-item">
+      <img src="assets/images/Coarse_B.JPG" alt="Coarse" class="grind-img">
+      <img src="assets/images/Coarse_T.jpg" alt="Coarse" class="grind-img2">
+      <p class="mt-2 grind-title">Coarse</p>
+    </div>
+  </div>
+</section>
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+

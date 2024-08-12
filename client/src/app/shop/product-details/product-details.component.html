@@ -1,22 +1,33 @@
 <div class="row" *ngIf="product">
-    <!-- <h1>{{product.name}}</h1> -->
-    <div class="col-6">
-        <img src="{{product.imageUrl}}" alt="{{product.name}}" class="w-100">
+    
+    <!-- Product Image -->
+    <div class="col-md-6 d-flex justify-content-center align-items-center">
+        <img src="{{product.imageUrl}}" alt="{{product.name}}" class="img-fluid rounded">
     </div>
-     <div class="col-6 mt-5">
-        <h2>{{product.name}}</h2>
-        <p style="font-size: 2em;">{{product.price | currency}}</p>
-        <div class="d-flex justify-content-start align-item-center">
-            <i class="fa fa-minus-circle text-warning me-2" style="cursor:pointer; font-size:2em;"></i>
-            <span class="font-weight-bold" style="font-size: 1.5em;">2</span>
-            <i class="fa fa-plus-circle text-warning ms-2" style="cursor:pointer; font-size:2em;"></i>
-            <button class="btn btn-outline-secondary ms-4">Add to cart</button>
-        </div>
-        <div class="row mt-4">
-            <h4>Description</h4>
-            <p>{{product.description}}</p>
-         </div>
 
-     </div>
+    <!-- Product Details -->
+    <div class="col-md-6 d-flex align-items-center">
+        <div class="text-left mx-4">
+            <h2 class="product-name">{{product.name}}</h2>
+            <p class="product-price">{{product.price | currency}}</p>
+            
+            <!-- Quantity Selector -->
+            <div class="d-flex align-items-center mb-4">
+                <button class="btn btn-icon me-2">
+                    <i class="fa fa-minus-circle"></i>
+                </button>
+                <span class="quantity font-weight-bold" style="font-size: 1.5em;">2</span>
+                <button class="btn btn-icon ms-2">
+                    <i class="fa fa-plus-circle"></i>
+                </button>
+                <button class="btn btn-custom ms-4">Add to Cart</button>
+            </div>
+
+            <!-- Product Description -->
+            <div class="product-description mt-4">
+                <h4>Description</h4>
+                <p>{{product.description}}</p>
+            </div>
+        </div>
+    </div>
 </div>
-  

@@ -1,16 +1,173 @@
-.carousel-img {
-    display: block;
-    width: 100%;
-    height: 600px; /* Set a consistent height for all images */
-    object-fit: cover; /* Ensures the image covers the entire area */
+body {
+  background-color: #ffffff;
+  font-family: 'Georgia', serif;
+  color: #4A4A4A;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-carousel, slide {
-    width: 100%;
-    height: 600px; /* Match the height of the images */
-    overflow: hidden; /* Hide overflow to ensure images fit within the container */
+h1, h3 {
+  font-family: 'Georgia', serif;
 }
 
 h1 {
-    margin-top: 50px; /* Adjust margin as needed */
+  font-weight: 600;
+  color: #4A4A4A;
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #399918;
+  font-weight: bold;
+}
+.highlight2 {
+  color: #8D493A;
+  font-weight: bold;
+}
+
+.bubbly-button {
+  background-color: #8B4513;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.bubbly-button:hover {
+  background-color: #399918;
+  transform: scale(1.05);
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.block {
+  min-height: 500px;
+  padding: 20px;
+}
+
+.img-block {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.container-fluid.mt-5 {
+  margin-top: 50px;
+}
+
+.row.text-center .col-4 {
+  margin-bottom: 30px;
+}
+
+img {
+  border-radius: 15px;
+}
+
+/* Icons Section */
+.row.text-center .col-3 {
+  margin-bottom: 30px;
+}
+
+.icon-img {
+  width: 100px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  border-radius: 50%; /* Makes the images circular if they are square */
+  object-fit: cover; /* Ensure the image fits within the given dimensions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for depth */
+}
+
+.icon-title {
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px; /* Set a fixed height for titles */
+  margin-top: 10px;
+}
+
+.icon-description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.icon-img:hover {
+  transform: scale(1.1);
+}
+
+.row.text-center .col-3 {
+  margin-bottom: 30px;
+}
+
+/* Coffee Grind Section */
+.coffee-grind-section {
+  background-color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.coffee-grind-section h3 {
+  color: #8B4513;
+  font-weight: bold;
+}
+
+.coffee-grind-section p {
+  font-size: 16px;
+  color: #4A4A4A;
+  margin-bottom: 30px;
+}
+
+.row.text-center {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure items wrap to the next line if necessary */
+}
+.grind-section-text {
+  color: #202020; /* Set Grind Section text color to black */
+}
+.grind-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.grind-img {
+  width: 100%; /* Set a fixed width for all images */
+  height: 100%; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image fits within the given dimensions */
+  border-radius: 10%; /* Optional: Add rounded corners */
+}
+.grind-img2 {
+  width: 30%; /* Set a fixed width for all images */
+  height: 30%; /* Set a fixed height for all images */
+  object-fit: cover; /* Ensure the image fits within the given dimensions */
+  border-radius: 10%; /* Optional: Add rounded corners */
+}
+.grind-title {
+  font-size: 14px;
+  font-weight: bold;
 }
