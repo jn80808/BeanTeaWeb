@@ -36,21 +36,18 @@
     font-size: 1.5em;
 }
 
-.btn-icon:hover {
-    color: #228B22; /* Green color on hover */
-}
-
 .btn-custom {
     background-color: #FF5F00;
-    color: #fff;
-    border: 1px solid #8B4513;
-    transition: background-color 0.3s, border-color 0.3s;
+    color: white;
+    border-color: #FF5F00;
 }
 
 .btn-custom:hover {
-    background-color: #228B22; /* Green color */
-    border-color: #228B22;
+    background-color: #228B22;
+    color: #f8f8f8; /* Orange text */
+    border: 2px solid #4abfa6; /* Orange border */
 }
+
 
 /* Additional margin if needed */
 .mx-4 {

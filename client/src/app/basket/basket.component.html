@@ -1,3 +1,84 @@
-<p>basket works!</p>
+<div class="container mt-5">
+    <div *ngIf="(basketService.basketSource$ | async) === null">
+        <p>There are no items in your basket</p>
+    </div>
 
-<h1>HELLLLOOOOOOOOOO</h1>
+    <ng-container *ngIf="(basketService.basketSource$ | async) as basket">
+        <div class="container">
+            <div class="row">
+                <div class="table-responsive">
+                    <table class="table">
+                        <!-- Header -->
+                        <thead class="bg-light text-uppercase">
+                            <tr>
+                                <th><div class="py-2">Product </div></th>
+                                <th><div class="py-2">Price </div></th>
+                                <th><div class="py-2">Quantity </div></th>
+                                <th><div class="py-2">Total </div></th>
+                                <th><div class="py-2">Remove </div></th>
+                            </tr>
+                        </thead>
+                        <!-- table body -->
+                        <tbody>
+                            <!-- Basket Items Loop -->
+                            <tr *ngFor="let item of basket.items">
+                                <!-- Product Image -->
+                                <td>
+                                    <div class="d-flex align-items-center">
+                                        <img src="{{item.imageUrl}}" 
+                                            alt="{{item.productName}}" 
+                                            class="img-fluid rounded-circle"
+                                            style="width: 50px; height: 50px; object-fit: cover;">
+                                        <!-- Product Details -->
+                                        <div class="ms-3">
+                                            <h5 class="mb-0">
+                                                <a class="text-dark text-decoration-none">
+                                                    {{item.productName}}
+                                                </a>
+                                            </h5>
+                                            <span class="text-muted fst-italic">
+                                                Type: {{item.type}}
+                                            </span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <!-- Price -->
+                                <td class="align-middle"><strong>{{item.price | currency}}</strong></td>
+                                <!-- Quantity -->
+                                <td class="align-middle">
+                                    <div class="d-flex align-items-center">
+                                        <!-- minus -->
+                                        <i class="fa fa-minus-circle custom-icon me-2"></i>
+                                        <strong style="font-size: 1.5em;">{{item.quantity}}</strong>
+                                        <!-- add -->
+                                        <i class="fa fa-plus-circle custom-icon mx-2"></i>
+                                    </div>
+                                </td>                                
+                                <!-- Total -->
+                                <td class="align-middle"><strong>{{item.price * item.quantity | currency}}</strong></td>
+                                <!-- Remove -->
+                                <td class="align-middle">
+                                    <a class="text-danger">
+                                        <i class="fa fa-trash" style="font-size: 2em; cursor: pointer;"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Order Summary -->
+            <div class="row">
+                <div class="col-6 offset-6">
+                    <app-order-totals></app-order-totals>
+                    <!-- checkout button -->
+                    <div class="d-grid">
+                        <a routerLink="/checkout" class="btn custom-btn py-2">
+                            Proceed to checkout
+                        </a>
+                    </div>
+                </div>
+            </div>                            
+        </div>
+    </ng-container>
+</div>

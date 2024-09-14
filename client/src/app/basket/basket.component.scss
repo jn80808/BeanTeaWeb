@@ -1,0 +1,21 @@
+.custom-icon {
+    color: #FF5F00; /* Default color */
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.custom-icon:hover {
+    color: #228B22; /* Hover color */
+}
+
+.custom-btn {
+    background-color: white;
+    color: #FF5F00;
+    border: 2px solid #FF5F00;
+}
+
+.custom-btn:hover {
+    background-color: #FF5F00;
+    color: white;
+    border-color: #FF5F00;
+}

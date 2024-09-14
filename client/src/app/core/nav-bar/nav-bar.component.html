@@ -3,6 +3,7 @@
 
     <img src="assets/images/logo.png" alt ="logo" class="logo" style="max-height: 70px; " routerLink="/">
 
+        <!-- Navigator -->
       <nav class="my-2 text-uppercase fs-6" >
         <a class="p-2" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >Home</a>
         <a class="p-2" routerLink="/shop" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >Shop</a>
@@ -10,11 +11,15 @@
         <!-- <a class="p-2" routerLink="/test-error" routerLinkActive="active">Error</a> -->
       </nav>
 
+        <!-- basketIcon -->
       <div class="d-flex align-items-center">
         <a routerLink="/basket" class="position-relative">
           <i class="fa fa-shopping-cart fa-2x me-5 text-dark"></i>
-          <div class="cart-no">5</div>
+          <div *ngIf="(basketService.basketSource$ | async) as basket" class="cart-no">
+              {{getCount(basket.items)}}
+          </div>
         </a>
+        <!-- Log In | Sign Up -->
         <a href="" class="btn btn-outline-secondary me-2">Login</a>
         <a href="" class="btn btn-outline-secondary me-3">SignUp</a>
       </div>
