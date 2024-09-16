@@ -1,32 +1,35 @@
-<div class="row" *ngIf="product">
+<div class="container">
+
+    <div class="row" *ngIf="product">
     
-    <!-- Product Image -->
-    <div class="col-md-6 d-flex justify-content-center align-items-center">
-        <img src="{{product.imageUrl}}" alt="{{product.name}}" class="img-fluid rounded">
-    </div>
-
-    <!-- Product Details -->
-    <div class="col-md-6 d-flex align-items-center">
-        <div class="text-left mx-4">
-            <h2 class="product-name">{{product.name}}</h2>
-            <p class="product-price">{{product.price | currency}}</p>
-            
-            <!-- Quantity Selector -->
-            <div class="d-flex align-items-center mb-4">
-                <button class="btn btn-icon me-2">
-                    <i class="fa fa-minus-circle"></i>
-                </button>
-                <span class="quantity font-weight-bold" style="font-size: 1.5em;">2</span>
-                <button class="btn btn-icon ms-2">
-                    <i class="fa fa-plus-circle"></i>
-                </button>
-                <button class="btn btn-custom ms-4"><b>Add to Cart</b></button>
-            </div>
-
-            <!-- Product Description -->
-            <div class="product-description mt-4">
-                <h4>Description</h4>
-                <p>{{product.description}}</p>
+        <!-- Product Image -->
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+            <img src="{{product.imageUrl}}" alt="{{product.name}}" class="img-fluid rounded">
+        </div>
+    
+        <!-- Product Details -->
+        <div class="col-md-6 d-flex align-items-center">
+            <div class="text-left mx-4">
+                <h2 class="product-name">{{product.name}}</h2>
+                <p class="product-price">{{product.price | currency}}</p>
+                
+                <!-- Quantity Selector -->
+                <div class="d-flex align-items-center mb-4">
+                    <button class="btn btn-icon me-2">
+                        <i class="fa fa-minus-circle"></i>
+                    </button>
+                    <span class="quantity font-weight-bold" style="font-size: 1.5em;">2</span>
+                    <button class="btn btn-icon ms-2">
+                        <i class="fa fa-plus-circle"></i>
+                    </button>
+                    <button class="btn btn-custom ms-4"><b>Add to Cart</b></button>
+                </div>
+    
+                <!-- Product Description -->
+                <div class="product-description mt-4">
+                    <h4>Description</h4>
+                    <p>{{product.description}}</p>
+                </div>
             </div>
         </div>
     </div>

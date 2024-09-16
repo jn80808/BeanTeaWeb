@@ -14,7 +14,4 @@ export class PagerComponent {
     this.pageChanged.emit(event.page);
   }
 
-
-
-
 }

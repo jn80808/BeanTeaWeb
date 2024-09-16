@@ -19,3 +19,22 @@
     color: white;
     border-color: #FF5F00;
 }
+
+.product-name-link {
+    color: black; /* Default color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.product-name-link:hover {
+    color: blue; /* Hover color */
+}
+
+
+.product-name-link {
+    color: rgb(63, 61, 61); /* Default color */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+.product-name-link:hover {
+    color: blue; /* Hover color */
+}
