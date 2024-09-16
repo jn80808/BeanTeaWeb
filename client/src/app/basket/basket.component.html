@@ -47,11 +47,13 @@
                                 <!-- Quantity -->
                                 <td class="align-middle">
                                     <div class="d-flex align-items-center">
-                                        <!-- minus -->
-                                        <i class="fa fa-minus-circle custom-icon me-2"></i>
+                                        <!-- minus icon-->
+                                        <i class="fa fa-minus-circle custom-icon me-2"
+                                            (click)="removeItem(item.id)"></i>
                                         <strong style="font-size: 1.5em;">{{item.quantity}}</strong>
-                                        <!-- add -->
-                                        <i class="fa fa-plus-circle custom-icon mx-2"></i>
+                                        <!-- add icon-->
+                                        <i class="fa fa-plus-circle custom-icon mx-2"
+                                            (click)="incrementQuantity(item)"></i>
                                     </div>
                                 </td>                                
                                 <!-- Total -->
