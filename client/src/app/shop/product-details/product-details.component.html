@@ -1,30 +1,43 @@
-<div class="container">
+<div class="container mt-5">
 
     <div class="row" *ngIf="product">
-    
+
         <!-- Product Image -->
         <div class="col-md-6 d-flex justify-content-center align-items-center">
             <img src="{{product.imageUrl}}" alt="{{product.name}}" class="img-fluid rounded">
         </div>
-    
+
         <!-- Product Details -->
         <div class="col-md-6 d-flex align-items-center">
             <div class="text-left mx-4">
                 <h2 class="product-name">{{product.name}}</h2>
                 <p class="product-price">{{product.price | currency}}</p>
-                
+
+                <h5 class="text-primary mb-3" *ngIf="quantityInBasket > 0">
+                    You have {{quantityInBasket}} of this item in your basket
+                </h5>
                 <!-- Quantity Selector -->
                 <div class="d-flex align-items-center mb-4">
-                    <button class="btn btn-icon me-2">
+                    <!-- Minus Button -->
+                    <button class="btn btn-icon me-2" (click)="decrementQuantity()">
                         <i class="fa fa-minus-circle"></i>
                     </button>
-                    <span class="quantity font-weight-bold" style="font-size: 1.5em;">2</span>
-                    <button class="btn btn-icon ms-2">
+                    <span class="quantity font-weight-bold" style="font-size: 1.5em;">
+                        {{quantity}}
+                    </span>
+                    <!-- Add Button -->
+                    <button class="btn btn-icon ms-2" (click)="incrementQuantity()">
                         <i class="fa fa-plus-circle"></i>
                     </button>
-                    <button class="btn btn-custom ms-4"><b>Add to Cart</b></button>
+                    <!-- Update/Add to Basket Button -->
+                    <button 
+                        class="btn btn-custom ms-4" 
+                        (click)="updateBasket()" 
+                        [disabled]="quantity === quantityInBasket">
+                        <b>{{ buttonText }}</b>
+                      </button>
+                      
                 </div>
-    
                 <!-- Product Description -->
                 <div class="product-description mt-4">
                     <h4>Description</h4>
@@ -32,5 +45,7 @@
                 </div>
             </div>
         </div>
+
     </div>
+
 </div>
