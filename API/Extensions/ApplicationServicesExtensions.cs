@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis; // Add this line
 using Microsoft.Extensions.DependencyInjection; // Add this line
-using Microsoft.Extensions.Configuration; // Add this line
+using Microsoft.Extensions.Configuration;
+using Infrastructure.Services; // Add this line
 
 namespace API.Extensions
 {
@@ -31,6 +32,7 @@ namespace API.Extensions
             });
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ITokenService, TokenService>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
