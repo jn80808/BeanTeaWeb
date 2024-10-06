@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.Extensions.Configuration;
+
 
 namespace API.Extensions
 {
@@ -31,16 +33,15 @@ namespace API.Extensions
                         options.TokenValidationParameters = new TokenValidationParameters 
                         {
                             ValidateIssuerSigningKey = true,
-                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Token:Key"])),
-                            ValidIssuer = config["Token:Issue"],
-                            ValidateIssuer = true
+                            IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config
+                            ["Token:Key"])),
+                            ValidIssuer = config["Token:Issuer"],
+                            ValidateIssuer = true,
+                            ValidateAudience = false
                         };
                     });
 
-
-
-               services.AddAuthorization();
-
+            //    services.AddAuthorization();
                return services;
             }
     }
