@@ -1,0 +1,48 @@
+<section class="vh-100" style="background-color: #4abfa6; background-image: url('https://i.pinimg.com/564x/33/b6/f1/33b6f1817ae18319f54e7671f70aba4b.jpg'); background-size: cover; background-position: center;">
+    <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col col-xl-10">
+                <div class="card" style="border-radius: 1rem;">
+                    <div class="row g-0">
+                        <!-- Image Left -->
+                        <div class="col-md-6 col-lg-5 d-none d-md-block d-flex justify-content-center align-items-center">
+                            <img src="https://i.pinimg.com/564x/33/b6/f1/33b6f1817ae18319f54e7671f70aba4b.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem; margin: 1rem; padding: 1rem; max-width: 90%;" />
+                        </div>
+                        <div class="col-md-6 col-lg-7 d-flex align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">  
+                                
+                                <!-- FormStart -->
+                                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                                    <!-- logo -->
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <img src="assets/images/logo.png" alt="logo" class="logo" style="max-height: 70px;" routerLink="/">
+                                        <p class="text-gray">Whether it's coffee or tea, take a moment to pause and appreciate the brew.</p>
+                                    </div>
+                                    <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+                                    <!-- Email Address -->
+                                    <div class="form-floating mb-3">
+                                        <input type="email" formControlName ="email" class="form-control" id="floatingInput" placeholder="Email">
+                                        <label for="floatingInput">Email address</label>
+                                    </div>
+                                    <!-- Password -->
+                                    <div class="form-floating">
+                                        <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <!-- LogInButton -->
+                                    <div class="pt-4 mb-4 d-flex justify-content-center">
+                                        <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg" style="width: 100%;" type="submit">Login</button>
+                                    </div>
+                                    <a class="small text-muted" href="#!">Forgot password?</a>
+                                    <p class="mb-5 pb-lg-2" style="color: #393f81;">Don't have an account? <a href="#!" style="color: #393f81;">Register here</a></p>
+                                    <a href="#!" class="small text-muted">Terms of use.</a>
+                                    <a href="#!" class="small text-muted">Privacy policy</a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
