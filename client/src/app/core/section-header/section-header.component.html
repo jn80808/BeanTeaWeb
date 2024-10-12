@@ -5,7 +5,9 @@
             <div class="row d-flex align-items-center">
                 <div class="col-9">
                     <!-- Title goes here for every breadcrumbs -->
-                     <h1>{{breadcrumbs[breadcrumbs.length-1].label | titlecase}}</h1>
+                    <h1 class="section-header-title">
+                        {{ breadcrumbs[breadcrumbs.length-1].label | titlecase }}
+                    </h1>                    
                 </div>
                 <xng-breadcrumb>
                     <ng-container *xngBreadcrumbItem="let breadcrumb">

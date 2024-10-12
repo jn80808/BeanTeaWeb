@@ -20,15 +20,9 @@
                                     </div>
                                     <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
                                     <!-- Email Address -->
-                                    <div class="form-floating mb-3">
-                                        <input type="email" formControlName ="email" class="form-control" id="floatingInput" placeholder="Email">
-                                        <label for="floatingInput">Email address</label>
-                                    </div>
-                                    <!-- Password -->
-                                    <div class="form-floating">
-                                        <input type="password" formControlName="password" class="form-control" id="floatingPassword" placeholder="Password">
-                                        <label for="floatingPassword">Password</label>
-                                    </div>
+                                     <app-text-input [formControl]="loginForm.controls['email']" [label]="'Email Address'"></app-text-input>
+                                     <!-- Password -->
+                                     <app-text-input [formControl]="loginForm.controls['password']" [label]="'Password'"></app-text-input>
                                     <!-- LogInButton -->
                                     <div class="pt-4 mb-4 d-flex justify-content-center">
                                         <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg" style="width: 100%;" type="submit">Login</button>
@@ -44,5 +38,13 @@
                 </div>
             </div>
         </div>
+    </div>
+    <br>
+    <div class="col-4  ms-5">
+        <p>Form Status:{{loginForm.status}}</p>
+        <p>Email Status:{{loginForm.get('email')?.status}}</p>
+        <p>Email Touched:{{loginForm.get('email')?.touched}}</p>
+        <p>Email dirty:{{loginForm.get('email')?.dirty}}</p>
+        <pre>{{loginForm.value | json}}</pre>
     </div>
 </section>

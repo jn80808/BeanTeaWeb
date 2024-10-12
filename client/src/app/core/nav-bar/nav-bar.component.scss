@@ -32,9 +32,37 @@ a{
     color: white;
 }
 
+.cart-no {
+    padding: 0.2rem 0.4rem;
+    font-size: 0.75rem;
+}
+
+.dropdown-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
 
 
+.welcome-text {
+    color: #4abfa6;
+}
 
+.basket-icon {
+    color: #FF5F00;
+}
+.person-avatar {
+    height: 70px;  /* Adjust size as needed */
+    width: 70px;
+    border-radius: 50%;
+    background-color: #FF5F00;  /* Fallback color */
+    background-image: url("https://api.dicebear.com/8.x/big-smile/svg");  /* Avatar image */
+    background-size: cover;
+    background-position: center;
+    display: block;
+}
 
 
 
