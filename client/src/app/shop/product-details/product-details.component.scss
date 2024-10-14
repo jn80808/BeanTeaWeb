@@ -13,9 +13,13 @@
     align-items: center;
 }
 
-/* Left alignment for text */
-.text-left {
-    text-align: left;
+/* General text styles for uniformity */
+.font-weight-bold {
+    font-weight: 600; /* Medium bold weight for headers and important text */
+}
+
+.font-weight-normal {
+    font-weight: 400; /* Regular weight for body text */
 }
 
 /* Price styling */
@@ -48,9 +52,87 @@
     border: 2px solid #4abfa6; /* Orange border */
 }
 
-
 /* Additional margin if needed */
 .mx-4 {
     margin-left: 1.5rem;
     margin-right: 1.5rem;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1.5rem;
+    background-color: #F4F6FF; /* Updated background color */
+    font-family: 'Nunito', Arial, Helvetica, sans-serif; /* Apply Nunito with fallback fonts */
+
+    .left-column,
+    .right-column {
+        flex: 1;
+        min-width: 300px;
+        background-color: #ffffff; /* Retained white background for columns */
+        padding: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        
+    }
+
+    .left-column {
+        d-flex {
+            justify-content: center; /* Centering content */
+            flex-direction: column; /* Ensure column layout */
+        }
+
+        h3 .preparation-title {
+            color: #FF5F00; /* Orange for 'Shipping Info' */
+            font-weight: bold;
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        li {
+            font-size: 1.25rem; /* Adjusted font size for list items */
+            margin: 0.5rem 0; /* Improved spacing */
+            font-family: 'Nunito', Arial, Helvetica, sans-serif
+        }
+    }
+
+    .right-column {
+        .carousel-item {
+            video {
+                width: 100%; /* Adjust to full width */
+                max-height: 400px; /* Set a max height for videos */
+                object-fit: cover; /* Maintain aspect ratio */
+            }
+        }
+    }
+}
+
+.tea {
+    color: #54B435; /* Green for 'Tea' */
+}
+
+.coffee {
+    color: #8E3200; /* Brown for 'Coffee' */
+}
+
+.shipping-title {
+    color: #FF5F00; /* Orange for 'Shipping Info' */
+    font-weight: bold;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.LookForThisCoolWebsite {
+    font-size: 2em;
+    text-align: center;
+    background-color: #000;
+  }
+  .LookForThisCoolWebsite a{
+  color: #FF0000;
+  }
+  
+  

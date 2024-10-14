@@ -1,0 +1,25 @@
+.text-gray {
+    color: #555555; // Dark gray color
+    font-size: 1.25rem; 
+    line-height: 1.5; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 600px; 
+  }
+  
+// Target the login button
+button {
+    background-color: #000; // Original button background color
+    color: #fff; // Default text color (white)
+    font-weight: bold; // Make the text bold
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; // Smooth transition for both background and text color
+  
+    // Hover effect
+    &:hover {
+      background-color: #4abfa6; // Change background color to desired hover color
+      color: #000; // Change text color to black on hover
+    }
+  }
+  
+  

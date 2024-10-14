@@ -1,5 +1,4 @@
 <div class="container mt-5">
-
     <div class="row" *ngIf="product">
 
         <!-- Product Image -->
@@ -10,11 +9,11 @@
         <!-- Product Details -->
         <div class="col-md-6 d-flex align-items-center">
             <div class="text-left mx-4">
-                <h2 class="product-name">{{product.name}}</h2>
-                <p class="product-price">{{product.price | currency}}</p>
+                <h2 class="product-name font-weight-bold">{{product.name}}</h2>
+                <p class="product-price font-weight-bold">{{product.price | currency}}</p>
 
                 <h5 class="text-primary mb-3" *ngIf="quantityInBasket > 0">
-                    You have {{quantityInBasket}} of this item in your basket
+                    You have <span class="font-weight-bold">{{quantityInBasket}}</span> of this item in your basket
                 </h5>
                 <!-- Quantity Selector -->
                 <div class="d-flex align-items-center mb-4">
@@ -35,17 +34,63 @@
                         (click)="updateBasket()" 
                         [disabled]="quantity === quantityInBasket">
                         <b>{{ buttonText }}</b>
-                      </button>
-                      
+                    </button>
                 </div>
                 <!-- Product Description -->
                 <div class="product-description mt-4">
-                    <h4>Description</h4>
-                    <p>{{product.description}}</p>
+                    <h4 class="font-weight-bold">Description</h4>
+                    <p class="font-weight-normal">{{product.description}}</p>
                 </div>
             </div>
         </div>
 
     </div>
 
+    <!-- Product Preparation Instructions -->
+    <div class="container">
+        <div class="left-column d-flex align-items-center justify-content-center">
+            <h3><span class="preparation-title font-weight-bold ">Preparation Instructions</span></h3>
+            <ul>
+                <li><strong class="tea">Tea:</strong> Use 1 teaspoon of tea leaves per cup. Boil water, then steep for 3-5 minutes depending on the type of tea.</li>
+                <li><strong class="coffee">Coffee:</strong> Use 2 tablespoons of ground coffee per 6 ounces of water. Brew for 4-5 minutes.</li>
+                <li><strong>Temperature:</strong> Ideal temperature for tea is around 85°C and for coffee around 90-96°C.</li>
+                <li><strong>Serving:</strong> Add milk, sugar, or lemon according to preference.</li>
+            </ul>
+        </div>
+        
+        <div class="right-column">
+            <carousel [isAnimated]="true" aria-label="Image carousel of coffee and tea">
+                <!-- TEA -->
+                <slide>
+                  <img src="https://i.pinimg.com/564x/0a/7d/37/0a7d370fba10e155b19d376272ba3e9b.jpg" alt="Coffee and Tea" class="carousel-img">
+                </slide>
+                <slide>
+                  <img src="https://i.pinimg.com/564x/c6/f4/7c/c6f47c227a9115a631ebf2637ac97b84.jpg" alt="A picturesque tea farm" class="carousel-img">
+                </slide>
+                <slide>
+                  <img src="https://i.pinimg.com/enabled/564x/4a/00/c8/4a00c89131452be42fb51db6c985c801.jpg" alt="A serene coffee farm" class="carousel-img">
+                </slide>
+                <!-- COFFE -->
+                <slide>
+                    <img src="https://i.pinimg.com/enabled/564x/69/76/a1/6976a1278b5fa9b7054d0a889bf96ccd.jpg" alt="A serene coffee farm" class="carousel-img">
+                </slide>
+                <slide>
+                    <img src="https://i.pinimg.com/564x/9f/ed/87/9fed87f43bf364ec6b427053299c30ed.jpg" alt="A serene coffee farm" class="carousel-img">
+                </slide>
+                <slide>
+                    <img src="https://i.pinimg.com/564x/18/49/e3/1849e35b11b2b69b5db8861887a4f99c.jpg" alt="A serene coffee farm" class="carousel-img">
+                </slide>
+              </carousel>
+        </div>
+    <div>
+        <p><b class="shipping-title font-weight-bold">Shipping Info</b></p>
+        <p><strong>READY TO SHIP:</strong> This item is ready to ship. Order processing varies by warehouse but typically takes 5-10 business days due to decreased warehouse staff and increased demand. Once your order is processed and shipped, delivery is subject to carrier transit times below.</p>
+        <p><strong>SHIPPING:</strong> This item ships with standard flat-rate curbside shipping. Our standard flat-rate 10% shipping fee is based on your order total and covers the processing, handling, packing, and delivery of your order.</p>
+        <p><strong>RETURNS:</strong> This is a final sale item and non-returnable. Please read our <a href="#" class="text-primary">return policy</a> for further details.</p>
+    </div>
 </div>
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
