@@ -25,7 +25,14 @@
                                      <app-text-input [formControl]="registerForm.controls['email']" [label]="'Email Address'"></app-text-input>
                                      <!-- Password -->
                                      <app-text-input [formControl]="registerForm.controls['password']" [label]="'Password'" [type]="'password'"></app-text-input>
-                                    <!-- SignUpButton -->
+                                     <!-- Existing Email Error Handling -->
+                                     <ul class="text-danger list-unstyled" *ngIf="errors">
+                                        <li *ngFor="let error of errors">
+                                            {{error}}
+                                        </li>
+                                     </ul>
+                                    
+                                     <!-- SignUpButton -->
                                     <div class="pt-4 mb-4 d-flex justify-content-center">
                                         <button data-mdb-button-init data-mdb-ripple-init class="btn btn-dark btn-lg" style="width: 100%;" [disabled]="registerForm.invalid" type="submit" >Sign Up</button>
                                     </div>
