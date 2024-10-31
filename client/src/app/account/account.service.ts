@@ -55,8 +55,7 @@ export class AccountService {
 
   checkEmailExist(email:string){
     return this.http.get<boolean>(this.baseUrl + 'account/emailExists?email=' + email);
-    
-
+  
   }
 
 
