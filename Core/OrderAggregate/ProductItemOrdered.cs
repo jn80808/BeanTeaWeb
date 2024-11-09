@@ -23,6 +23,8 @@ namespace Core.OrderAggregate
         public int ProductName { get; set; }
 
         public int imageUrl { get; set; }
+
+        
         
     }
 }
