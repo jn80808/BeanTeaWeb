@@ -12,7 +12,7 @@ namespace Core.OrderAggregate
         {
         }
 
-        public OrderItem(ProductItemOrdered itemOrdered, int price, int quantity) 
+        public OrderItem(ProductItemOrdered itemOrdered, decimal price, int quantity) 
         {
             this.ItemOrdered = itemOrdered;
             this.Price = price;
@@ -21,7 +21,7 @@ namespace Core.OrderAggregate
         }
         public ProductItemOrdered ItemOrdered{ get; set; }
 
-        public int Price { get; set; }
+        public decimal Price { get; set; }
 
         public int Quantity { get; set; }
     }

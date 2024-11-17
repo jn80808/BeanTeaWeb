@@ -7,24 +7,15 @@ namespace Core.OrderAggregate
 {
     public class ProductItemOrdered
     {
-        public ProductItemOrdered()
+        public ProductItemOrdered(int productItemId, string productName, string pictureUrl)
         {
+            ProductItemId = productItemId;
+            ProductName = productName;
+            PictureUrl = pictureUrl;
         }
 
-        public ProductItemOrdered(int productItemId, int productName, int imageUrl) 
-        {
-            this.ProductItemId = productItemId;
-            this.ProductName = productName;
-            this.imageUrl = imageUrl;
-   
-        }
         public int ProductItemId { get; set; }
-
-        public int ProductName { get; set; }
-
-        public int imageUrl { get; set; }
-
-        
-        
+        public string ProductName { get; set; }
+        public string PictureUrl { get; set; }
     }
 }
