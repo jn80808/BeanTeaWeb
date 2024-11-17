@@ -11,10 +11,10 @@ namespace Core.OrderAggregate
         {
         }
 
-        public Address(string firtName, string lastName,string street,
+        public Address(string FirstName, string lastName,string street,
                        string city, string state, string zipCode) 
         {
-            this.FirtName = firtName;
+            this.FirstName = FirstName;
             this.LastName = lastName;
             this.Street = street;
             this.City = city;
@@ -22,7 +22,7 @@ namespace Core.OrderAggregate
             this.ZipCode = zipCode;
    
         }
-        public string FirtName { get; set; }
+        public string FirstName { get; set; }
 
         public string LastName { get; set; }
 

@@ -25,6 +25,8 @@ namespace API.Helpers
                 .ForMember(dest => dest.Items, opt => opt.MapFrom(src => src.Items));
 
             CreateMap<BasketItemDto, BasketItem>();
-        }
+            CreateMap<AddressDto, Core.OrderAggregate.Address>();
+
+        }   
     }
 }
