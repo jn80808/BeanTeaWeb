@@ -4,6 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>disable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <Authors>Joy Ng</Authors>
+    <Copyright>© 2024 Joy Ng. All Rights Reserved.</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
